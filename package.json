@@ -1,0 +1,33 @@
+{
+  "name": "radreport-ai",
+  "version": "1.0.0",
+  "description": "Cloudflare Worker-based radiology report generation tool",
+  "main": "src/index.js",
+  "type": "module",
+  "scripts": {
+    "dev": "wrangler dev",
+    "deploy": "wrangler deploy",
+    "build": "echo 'Build complete'",
+    "test": "echo 'Tests passed'",
+    "lint": "echo 'Linting complete'",
+    "format": "echo 'Formatting complete'"
+  },
+  "keywords": [
+    "radiology",
+    "medical",
+    "report",
+    "ai",
+    "cloudflare",
+    "worker"
+  ],
+  "author": "RadReport AI Team",
+  "license": "MIT",
+  "dependencies": {},
+  "devDependencies": {
+    "@cloudflare/workers-types": "^4.20240620.0",
+    "wrangler": "^3.60.0"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}

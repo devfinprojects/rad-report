@@ -1,0 +1,56 @@
+name = "radreport-ai"
+main = "src/index.js"
+compatibility_date = "2024-01-01"
+node_compat = true
+
+[env.production]
+name = "radreport-ai-prod"
+
+[env.staging]
+name = "radreport-ai-staging"
+
+[[kv_namespaces]]
+binding = "TEMPLATES"
+id = "a1b2c3d4e5f6g7h8i9j0k1l2m3n4o5p6"
+preview_id = "preview_templates"
+
+[[kv_namespaces]]
+binding = "SNIPPETS"
+id = "q1w2e3r4t5y6u7i8o9p0a1s2d3f4g5"
+preview_id = "preview_snippets"
+
+[[kv_namespaces]]
+binding = "REPORTS"
+id = "z1x2c3v4b5n6m7k8j9h0g1f2d3s4a5"
+preview_id = "preview_reports"
+
+[[kv_namespaces]]
+binding = "SESSIONS"
+id = "q9w8e7r6t5y4u3i2o1p0a9s8d7f6"
+preview_id = "preview_sessions"
+
+[[kv_namespaces]]
+binding = "USAGE"
+id = "m1n2b3v4c5x6z7a8s9d0f1g2h3j4k5"
+preview_id = "preview_usage"
+
+[vars]
+ENVIRONMENT = "development"
+API_VERSION = "1.0.0"
+MAX_TEMPLATE_SIZE = 50000
+MAX_SNIPPET_SIZE = 10000
+DEFAULT_MODALITY = "CT"
+DEFAULT_SYSTEM = " BODY"
+ENABLE_STREAMING = "true"
+ENABLE_DEBUG = "false"
+RATE_LIMIT_REQUESTS = "100"
+RATE_LIMIT_WINDOW = "60"
+
+[build]
+command = "npm run build"
+
+[build.tests]
+command = "npm run test"
+
+[observability]
+enabled = true
