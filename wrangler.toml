@@ -2,6 +2,7 @@ name = "radreport-ai"
 main = "src/index.js"
 compatibility_date = "2024-01-01"
 node_compat = true
+account_id = "28e2ed35cf5a283715c062ec7de7ffdb"
 
 [env.production]
 name = "radreport-ai-prod"
@@ -11,27 +12,27 @@ name = "radreport-ai-staging"
 
 [[kv_namespaces]]
 binding = "TEMPLATES"
-id = "a1b2c3d4e5f6g7h8i9j0k1l2m3n4o5p6"
+id = "45cee1f844864b869632bfd4ccd33836"
 preview_id = "preview_templates"
 
 [[kv_namespaces]]
 binding = "SNIPPETS"
-id = "q1w2e3r4t5y6u7i8o9p0a1s2d3f4g5"
+id = "7cdd4de8c67d4242bb16ddd67b087dca"
 preview_id = "preview_snippets"
 
 [[kv_namespaces]]
 binding = "REPORTS"
-id = "z1x2c3v4b5n6m7k8j9h0g1f2d3s4a5"
+id = "b160732d8b6641d9993116df3c18a80d"
 preview_id = "preview_reports"
 
 [[kv_namespaces]]
 binding = "SESSIONS"
-id = "q9w8e7r6t5y4u3i2o1p0a9s8d7f6"
+id = "8102fc4ccaaf4d79bcd3ba1a39ca2299"
 preview_id = "preview_sessions"
 
 [[kv_namespaces]]
 binding = "USAGE"
-id = "m1n2b3v4c5x6z7a8s9d0f1g2h3j4k5"
+id = "5a9a3a7709e640cda4a697d5f51b8103"
 preview_id = "preview_usage"
 
 [vars]
