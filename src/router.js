@@ -36,7 +36,7 @@ export async function handleRequest(request, env, ctx, config) {
     }
 
     // Health check
-    if (path === '/health' || path === '/') {
+    if (path === '/health') {
       return handleHealth();
     }
 
